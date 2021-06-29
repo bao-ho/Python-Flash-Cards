@@ -6,7 +6,7 @@ import gtts
 import os
 
 #---------------- CONSTANTS --------------------------------------------------#
-BG = "#AAAAAA"
+BG = "#394867"
 WIDTH = 800
 HEIGHT = 526
 FONT = "Arial"
