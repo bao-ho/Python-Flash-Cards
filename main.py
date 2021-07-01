@@ -166,12 +166,12 @@ passes_list = read_progress()
 #---------------- UI --------------------------#
 window = tkinter.Tk()
 window.title("Flash card game")
-window.config(width=900, height=726, padx=50, pady=50, background=BG)
+window.config(width=900, height=726, padx=50, pady=40, background=BG)
 
 canvas = tkinter.Canvas()
 canvas.config(width=WIDTH, height=HEIGHT,
               background=BG, highlightthickness=0)
-canvas.grid(column=0, row=0, columnspan=4)
+canvas.grid(column=0, row=0, columnspan=4, pady=(0,30))
 front_image = tkinter.PhotoImage(file="images/card_front.png")
 back_image = tkinter.PhotoImage(file="images/card_back.png")
 canvas_image = canvas.create_image(WIDTH/2, HEIGHT/2)
